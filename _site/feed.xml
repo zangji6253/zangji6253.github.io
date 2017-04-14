@@ -6,19 +6,26 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Apr 2017 21:57:25 +0800</pubDate>
-    <lastBuildDate>Fri, 14 Apr 2017 21:57:25 +0800</lastBuildDate>
+    <pubDate>Fri, 14 Apr 2017 22:02:23 +0800</pubDate>
+    <lastBuildDate>Fri, 14 Apr 2017 22:02:23 +0800</lastBuildDate>
     <generator>Jekyll v3.4.1</generator>
     
       <item>
         <title>代码重构:函数</title>
-        <description>&lt;ul&gt;
+        <description>&lt;h1 id=&quot;section&quot;&gt;目的&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;易读&lt;/li&gt;
+  &lt;li&gt;易维护&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;方法&lt;/h1&gt;
+&lt;ul&gt;
   &lt;li&gt;短(4行)&lt;/li&gt;
   &lt;li&gt;只做一件事&lt;/li&gt;
   &lt;li&gt;向下规则(层级)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;参考资料：&lt;/h1&gt;
+&lt;h1 id=&quot;section-2&quot;&gt;参考资料：&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1hssVh20&quot;&gt;«Clean Code(代码整洁之道)» Robert C. Martin&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Apr 2017 00:00:00 +0800</pubDate>
