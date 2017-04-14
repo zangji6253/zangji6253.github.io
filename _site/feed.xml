@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Apr 2017 22:02:23 +0800</pubDate>
-    <lastBuildDate>Fri, 14 Apr 2017 22:02:23 +0800</lastBuildDate>
+    <pubDate>Fri, 14 Apr 2017 22:24:05 +0800</pubDate>
+    <lastBuildDate>Fri, 14 Apr 2017 22:24:05 +0800</lastBuildDate>
     <generator>Jekyll v3.4.1</generator>
     
       <item>
@@ -39,12 +39,20 @@
     
       <item>
         <title>单元测试1</title>
-        <description>&lt;ul&gt;
-  &lt;li&gt;aa&lt;/li&gt;
+        <description>&lt;h1 id=&quot;section&quot;&gt;意义&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;某种意义上来说，开发会破坏系统的运行。而单元测试能保障我们不必担心对代码的修改。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;参考资料：&lt;/h1&gt;
-&lt;p&gt;www.phpunit.cn&lt;/p&gt;
+&lt;h1 id=&quot;section-1&quot;&gt;方法&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;phpunit&lt;/li&gt;
+  &lt;li&gt;测试驱动开发(TDD)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;参考资料：&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.phpunit.cn/&quot;&gt;PHPUnit中文官网&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Apr 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/testunit/2017/04/14/PHPUNIT.html</link>
