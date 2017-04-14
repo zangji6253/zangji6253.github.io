@@ -6,9 +6,45 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Apr 2017 21:58:39 +0800</pubDate>
-    <lastBuildDate>Tue, 11 Apr 2017 21:58:39 +0800</lastBuildDate>
+    <pubDate>Fri, 14 Apr 2017 21:34:29 +0800</pubDate>
+    <lastBuildDate>Fri, 14 Apr 2017 21:34:29 +0800</lastBuildDate>
     <generator>Jekyll v3.4.1</generator>
+    
+      <item>
+        <title>代码重构:函数</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;aa&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;参考资料：&lt;/h1&gt;
+&lt;p&gt;«Clean Code(代码整洁之道)» Robert C. Martin&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/refactor/2017/04/14/REFACTOR.html</link>
+        <guid isPermaLink="true">http://localhost:4000/refactor/2017/04/14/REFACTOR.html</guid>
+        
+        
+        <category>refactor</category>
+        
+      </item>
+    
+      <item>
+        <title>单元测试1</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;aa&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;参考资料：&lt;/h1&gt;
+&lt;p&gt;www.phpunit.cn&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/testunit/2017/04/14/PHPUNIT.html</link>
+        <guid isPermaLink="true">http://localhost:4000/testunit/2017/04/14/PHPUNIT.html</guid>
+        
+        
+        <category>testunit</category>
+        
+      </item>
     
       <item>
         <title>Vim Hotkey</title>
