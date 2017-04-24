@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>张戬的博客</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+  <title>服务器信息</title>
+  <meta name="description" content="定义$_SERVER数组包含大量有用的网页服务器信息。大部分信息来自于CGI规范要求的环境变量(http://bit.ly/Vw912h)。这是一个来自CGI的完整的$_SERVER列表。">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/php/2017/04/23/SERVER.html">
   <link rel="alternate" type="application/rss+xml" title="张戬的博客" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -55,73 +54,132 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">服务器信息</h1>
+    <p class="post-meta"><time datetime="2017-04-23T00:00:00+08:00" itemprop="datePublished">Apr 23, 2017</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Apr 23, 2017</span>
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="section">定义</h1>
+<p>$_SERVER数组包含大量有用的网页服务器信息。大部分信息来自于CGI规范要求的环境变量(http://bit.ly/Vw912h)。
+这是一个来自CGI的完整的$_SERVER列表。</p>
 
-        <h2>
-          <a class="post-link" href="/php/2017/04/23/SERVER.html">服务器信息</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 20, 2017</span>
+<ul>
+  <li>
+    <p>PHP_SELF</p>
 
-        <h2>
-          <a class="post-link" href="/php/2017/04/20/EGPCS_VARIABLE.html">EGPCS变量</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 19, 2017</span>
+    <p>当前执行脚本的文件名，相对于文档根目录(例如，/store/cart.php)。这个变量在创建自引用脚本时非常有用。</p>
+  </li>
+  <li>
+    <p>SERVER_SOFTWARE</p>
 
-        <h2>
-          <a class="post-link" href="/php/2017/04/19/HTTP-BASICS.html">HTTP基础</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 14, 2017</span>
+    <p>服务器标识字符串(例如，Apache/1.3.33(Unix) mod_perl/1.26 PHP/ 5.0.4)。</p>
+  </li>
+  <li>
+    <p>SERVER_NAME</p>
 
-        <h2>
-          <a class="post-link" href="/refactor/2017/04/14/REFACTOR.html">代码重构:函数</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 14, 2017</span>
+    <p>从当前引用的URL的主机名、DNS别名或用于自引用的URL的IP地址(例如，www.example.com)。</p>
+  </li>
+  <li>
+    <p>GATEWAY_INTERFACE</p>
 
-        <h2>
-          <a class="post-link" href="/testunit/2017/04/14/PHPUNIT.html">单元测试1</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 11, 2017</span>
+    <p>服务器使用的CGI标准的版本(例如，CGI/1.1)。</p>
+  </li>
+  <li>
+    <p>SERVER_PROTOCAL</p>
 
-        <h2>
-          <a class="post-link" href="/vim/2017/04/11/VIM.html">Vim Hotkey</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 15, 2016</span>
+    <p>请求页面时通信协议的名称和版本(例如，HTTP/1.0)。</p>
+  </li>
+  <li>
+    <p>SERVER_PORT</p>
 
-        <h2>
-          <a class="post-link" href="/jekyll/update/2016/07/15/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-  </ul>
+    <p>服务器发送请求的端口号(例如，80)。</p>
+  </li>
+  <li>
+    <p>REQUEST_METHOD</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+    <p>客户端获取页面所使用的方法(例如, GET)</p>
+  </li>
+  <li>
+    <p>PATH_INFO</p>
 
-</div>
+    <p>客户端提供的真实路径(例如，/list/users)。</p>
+  </li>
+  <li>
+    <p>PATH_TRANSLATED</p>
+
+    <p>根据PATH_INFO的值转换到服务器的基本路径(例如，/home/httpd/htdocs/list/users)。</p>
+  </li>
+  <li>
+    <p>SCRIPT_NAME</p>
+
+    <p>当前页面的URL路径，对当前自引用脚本很有用(例如，/~me/menu.php)。</p>
+  </li>
+  <li>
+    <p>QUERY_STRING</p>
+
+    <p>URL中?后面的所有信息(例如，name=Fred+age=35)。</p>
+  </li>
+  <li>
+    <p>REMOTE_HOST</p>
+
+    <p>请求当前页面的用户的主机名。(例如，dialup-192-168-0-1.example.com (http://dialup-192-168-0-1.example.com))。如果服务器没有DNS，这就是空的，只有REMOTE_ADDR的信息。</p>
+  </li>
+  <li>
+    <p>REMOTE_ADDR</p>
+
+    <p>一个包含请求当前页面IP地址的字符串(例如,192.168.0.250)。</p>
+  </li>
+  <li>
+    <p>AUTH_TYPE</p>
+
+    <p>如果页面是受密码保护的，这代表保护页面的认证方法(例如，basci)。</p>
+  </li>
+  <li>
+    <p>REMOTE_USER</p>
+
+    <p>如果页面是受密码保护的，这是认证客户端的用户名(例如，Fred)。注意，密码是无法获取的。</p>
+  </li>
+  <li>
+    <p>REMOTE_IDENT</p>
+
+    <p>如果服务器配置了身份认证系统identd(RFC 931)，这是从主机获取的用户名(例如，barney)。由于很容易伪装，不要使用该字符串做认证。</p>
+  </li>
+  <li>
+    <p>CONTNT_TYPE</p>
+
+    <p>PUT和POST附加信息的内容类型(例如，x-url-encoded)。</p>
+  </li>
+  <li>
+    <p>CONTENT_LENGTH</p>
+
+    <p>PUT和POST附加信息的长度(例如，3952)。</p>
+  </li>
+</ul>
+
+<p>Apache服务器还会为每个请求的HTTP头部在$<em>SERVER数组中创建实体。每个键名、头名会转换为大写，连字符-会转换为下划线</em>，并在前面加上HTTP_。例如，User-Agent头会有一个键名为HTTP_USER_AGENT的实体。最常用的两个头部是：</p>
+
+<ul>
+  <li>
+    <p>HTTP_USER_AGENT</p>
+
+    <p>浏览器的标识字符串(例如，Mozilla/5.0(Windows 2000;U) Opera 6.0 [en])。</p>
+  </li>
+  <li>
+    <p>HTTP_REFERER</p>
+
+    <p>浏览器表示当前页面来自于哪个页面(例如，http://www.example.com/last_page.html)。</p>
+  </li>
+</ul>
+
+<h1 id="section-1">参考资料：</h1>
+<p><a href="https://pan.baidu.com/s/1gfh3uWN">«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf</a></p>
+
+  </div>
+
+</article>
 
       </div>
     </div>

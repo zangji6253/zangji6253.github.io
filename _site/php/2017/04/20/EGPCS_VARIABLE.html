@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>张戬的博客</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+  <title>EGPCS变量</title>
+  <meta name="description" content="定义服务器配置和请求的信息(包含表单参数和cookie)以不同的方式在PHP脚本中访问，这些信息放在一起被标识为EGPCS(environment、GET、POST、cookie和server)。">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/php/2017/04/20/EGPCS_VARIABLE.html">
   <link rel="alternate" type="application/rss+xml" title="张戬的博客" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -55,73 +54,40 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">EGPCS变量</h1>
+    <p class="post-meta"><time datetime="2017-04-20T00:00:00+08:00" itemprop="datePublished">Apr 20, 2017</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Apr 23, 2017</span>
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="section">定义</h1>
+<p>服务器配置和请求的信息(包含表单参数和cookie)以不同的方式在PHP脚本中访问，这些信息放在一起被标识为EGPCS(environment、GET、POST、cookie和server)。</p>
 
-        <h2>
-          <a class="post-link" href="/php/2017/04/23/SERVER.html">服务器信息</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 20, 2017</span>
+<p>PHP可创建包含EGPCS信息的6个全局数据。</p>
+<h1 id="cookie">$_COOKIE</h1>
+<p>包含作为请求中cookie数值的部分，数组的键名是表单参数。</p>
+<h1 id="get">$_GET</h1>
+<p>包含作为GET请求中参数的部分，数组的键名是表单参数。</p>
+<h1 id="post">$_POST</h1>
+<p>包含作为POST请求中参数的部分，数组的键名是表单参数。</p>
+<h1 id="files">$_FILES</h1>
+<p>包含上传文件的信息。</p>
+<h1 id="server">$_SERVER</h1>
+<p>包含网页服务器中有用的信息。</p>
+<h1 id="env">$_ENV</h1>
+<p>包含环境变量数值，数组的键名是环境变量的名字。</p>
+<h1 id="section-1">可见性</h1>
+<p>这些变量不仅仅是全局的，而且在函数定义内部也是可见的。</p>
+<h1 id="request">$_REQUEST</h1>
+<p>$_REQUEST数组也会自动创建。该数组是包含$_GET、$_POST和$_COOKIES所有信息的一个组合。</p>
+<h1 id="section-2">参考资料：</h1>
+<p><a href="https://pan.baidu.com/s/1gfh3uWN">«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf</a></p>
 
-        <h2>
-          <a class="post-link" href="/php/2017/04/20/EGPCS_VARIABLE.html">EGPCS变量</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 19, 2017</span>
+  </div>
 
-        <h2>
-          <a class="post-link" href="/php/2017/04/19/HTTP-BASICS.html">HTTP基础</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 14, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/refactor/2017/04/14/REFACTOR.html">代码重构:函数</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 14, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/testunit/2017/04/14/PHPUNIT.html">单元测试1</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 11, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/vim/2017/04/11/VIM.html">Vim Hotkey</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 15, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2016/07/15/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </div>
