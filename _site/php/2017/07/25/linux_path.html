@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>第7章 Web技术</title>
-  <meta name="description" content="处理表单简介用PHP处理表单是很容易的，表单参数会在$_GET和$_POST数组中。本章会用到很多处理表单的技巧。">
+  <title>Linux path</title>
+  <meta name="description" content="查看PATH：echo $PATH">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/php/2017/04/24/FORM.html">
+  <link rel="canonical" href="http://localhost:4000/php/2017/07/25/linux_path.html">
   <link rel="alternate" type="application/rss+xml" title="张戬的博客" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -57,31 +57,73 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">第7章 Web技术</h1>
-    <p class="post-meta"><time datetime="2017-04-24T00:00:00+08:00" itemprop="datePublished">Apr 24, 2017</time></p>
+    <h1 class="post-title" itemprop="name headline">Linux path</h1>
+    <p class="post-meta"><time datetime="2017-07-25T00:00:00+08:00" itemprop="datePublished">Jul 25, 2017</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h1 id="处理表单">处理表单</h1>
-<h2 id="简介">简介</h2>
-<p>用PHP处理表单是很容易的，表单参数会在$_GET和$_POST数组中。本章会用到很多处理表单的技巧。</p>
+    <h1 id="查看path">查看PATH：</h1>
+<p>echo $PATH</p>
 
-<h2 id="方法">方法</h2>
+<p>以添加mongodb server为列</p>
 
-<h2 id="参数">参数</h2>
+<h1 id="修改方法一">修改方法一：</h1>
+<p>export PATH=/usr/local/mongodb/bin:$PATH</p>
 
-<h2 id="自处理页面">自处理页面</h2>
+<p>//配置完后可以通过echo $PATH查看配置结果。</p>
 
-<h2 id="粘性表单">粘性表单</h2>
+<p>生效方法：立即生效</p>
 
-<h2 id="多值参数">多值参数</h2>
+<p>有效期限：临时改变，只能在当前的终端窗口中有效，当前窗口关闭后就会恢复原有的path配置</p>
 
-<h2 id="粘性多值参数">粘性多值参数</h2>
+<p>用户局限：仅对当前用户</p>
 
-<h2 id="文件上传">文件上传</h2>
+<h1 id="修改方法二">修改方法二：</h1>
+<p>通过修改.bashrc文件:</p>
 
-<h1 id="参考资料">参考资料：</h1>
-<p><a href="https://pan.baidu.com/s/1gfh3uWN">«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf</a></p>
+<p>vim ~/.bashrc</p>
+
+<p>//在最后一行添上：</p>
+
+<p>export PATH=/usr/local/mongodb/bin:$PATH</p>
+
+<p>生效方法：（有以下两种）</p>
+
+<p>1、关闭当前终端窗口，重新打开一个新终端窗口就能生效</p>
+
+<p>2、输入“source ~/.bashrc”命令，立即生效</p>
+
+<p>有效期限：永久有效</p>
+
+<p>用户局限：仅对当前用户</p>
+
+<h1 id="修改方法三">修改方法三:</h1>
+<p>通过修改profile文件:</p>
+
+<p>vim /etc/profile</p>
+
+<p>/export PATH //找到设置PATH的行，添加</p>
+
+<p>export PATH=/usr/local/mongodb/bin:$PATH</p>
+
+<p>生效方法：系统重启</p>
+
+<p>有效期限：永久有效</p>
+
+<p>用户局限：对所有用户</p>
+
+<h1 id="修改方法四">修改方法四:</h1>
+<p>通过修改environment文件:</p>
+
+<p>vim /etc/environment</p>
+
+<p>在PATH=”/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games”中加入“:/usr/local/mongodb/bin”</p>
+
+<p>生效方法：系统重启</p>
+
+<p>有效期限：永久有效</p>
+
+<p>用户局限：对所有用户</p>
 
   </div>
 

@@ -6,13 +6,87 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 01 Jun 2017 04:25:08 +0800</pubDate>
-    <lastBuildDate>Thu, 01 Jun 2017 04:25:08 +0800</lastBuildDate>
-    <generator>Jekyll v3.4.1</generator>
+    <pubDate>Tue, 25 Jul 2017 15:23:09 +0800</pubDate>
+    <lastBuildDate>Tue, 25 Jul 2017 15:23:09 +0800</lastBuildDate>
+    <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>Linux path</title>
+        <description>&lt;h1 id=&quot;查看path&quot;&gt;查看PATH：&lt;/h1&gt;
+&lt;p&gt;echo $PATH&lt;/p&gt;
+
+&lt;p&gt;以添加mongodb server为列&lt;/p&gt;
+
+&lt;h1 id=&quot;修改方法一&quot;&gt;修改方法一：&lt;/h1&gt;
+&lt;p&gt;export PATH=/usr/local/mongodb/bin:$PATH&lt;/p&gt;
+
+&lt;p&gt;//配置完后可以通过echo $PATH查看配置结果。&lt;/p&gt;
+
+&lt;p&gt;生效方法：立即生效&lt;/p&gt;
+
+&lt;p&gt;有效期限：临时改变，只能在当前的终端窗口中有效，当前窗口关闭后就会恢复原有的path配置&lt;/p&gt;
+
+&lt;p&gt;用户局限：仅对当前用户&lt;/p&gt;
+
+&lt;h1 id=&quot;修改方法二&quot;&gt;修改方法二：&lt;/h1&gt;
+&lt;p&gt;通过修改.bashrc文件:&lt;/p&gt;
+
+&lt;p&gt;vim ~/.bashrc&lt;/p&gt;
+
+&lt;p&gt;//在最后一行添上：&lt;/p&gt;
+
+&lt;p&gt;export PATH=/usr/local/mongodb/bin:$PATH&lt;/p&gt;
+
+&lt;p&gt;生效方法：（有以下两种）&lt;/p&gt;
+
+&lt;p&gt;1、关闭当前终端窗口，重新打开一个新终端窗口就能生效&lt;/p&gt;
+
+&lt;p&gt;2、输入“source ~/.bashrc”命令，立即生效&lt;/p&gt;
+
+&lt;p&gt;有效期限：永久有效&lt;/p&gt;
+
+&lt;p&gt;用户局限：仅对当前用户&lt;/p&gt;
+
+&lt;h1 id=&quot;修改方法三&quot;&gt;修改方法三:&lt;/h1&gt;
+&lt;p&gt;通过修改profile文件:&lt;/p&gt;
+
+&lt;p&gt;vim /etc/profile&lt;/p&gt;
+
+&lt;p&gt;/export PATH //找到设置PATH的行，添加&lt;/p&gt;
+
+&lt;p&gt;export PATH=/usr/local/mongodb/bin:$PATH&lt;/p&gt;
+
+&lt;p&gt;生效方法：系统重启&lt;/p&gt;
+
+&lt;p&gt;有效期限：永久有效&lt;/p&gt;
+
+&lt;p&gt;用户局限：对所有用户&lt;/p&gt;
+
+&lt;h1 id=&quot;修改方法四&quot;&gt;修改方法四:&lt;/h1&gt;
+&lt;p&gt;通过修改environment文件:&lt;/p&gt;
+
+&lt;p&gt;vim /etc/environment&lt;/p&gt;
+
+&lt;p&gt;在PATH=”/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games”中加入“:/usr/local/mongodb/bin”&lt;/p&gt;
+
+&lt;p&gt;生效方法：系统重启&lt;/p&gt;
+
+&lt;p&gt;有效期限：永久有效&lt;/p&gt;
+
+&lt;p&gt;用户局限：对所有用户&lt;/p&gt;
+</description>
+        <pubDate>Tue, 25 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/php/2017/07/25/linux_path.html</link>
+        <guid isPermaLink="true">http://localhost:4000/php/2017/07/25/linux_path.html</guid>
+        
+        
+        <category>php</category>
+        
+      </item>
     
       <item>
         <title>Programming PHP</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;第五章 数组&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;第五章-数组&quot;&gt;第五章 数组&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -23,7 +97,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;5.1 索引数组和关联数组&lt;/h2&gt;
+&lt;h2 id=&quot;51-索引数组和关联数组&quot;&gt;5.1 索引数组和关联数组&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -43,81 +117,81 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;section-2&quot;&gt;5.2 识别数组元素&lt;/h2&gt;
+&lt;h2 id=&quot;52-识别数组元素&quot;&gt;5.2 识别数组元素&lt;/h2&gt;
 
-&lt;h2 id=&quot;section-3&quot;&gt;5.3 在数组中存储数据&lt;/h2&gt;
+&lt;h2 id=&quot;53-在数组中存储数据&quot;&gt;5.3 在数组中存储数据&lt;/h2&gt;
 
-&lt;h3 id=&quot;section-4&quot;&gt;5.3.1 在数组末尾添加值&lt;/h3&gt;
+&lt;h3 id=&quot;531-在数组末尾添加值&quot;&gt;5.3.1 在数组末尾添加值&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-5&quot;&gt;5.3.2 指定值的范围&lt;/h3&gt;
+&lt;h3 id=&quot;532-指定值的范围&quot;&gt;5.3.2 指定值的范围&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-6&quot;&gt;5.3.3 获得数组大小&lt;/h3&gt;
+&lt;h3 id=&quot;533-获得数组大小&quot;&gt;5.3.3 获得数组大小&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-7&quot;&gt;5.3.4 填充数组&lt;/h3&gt;
+&lt;h3 id=&quot;534-填充数组&quot;&gt;5.3.4 填充数组&lt;/h3&gt;
 
-&lt;h2 id=&quot;section-8&quot;&gt;5.4 多维数组&lt;/h2&gt;
+&lt;h2 id=&quot;54-多维数组&quot;&gt;5.4 多维数组&lt;/h2&gt;
 
-&lt;h2 id=&quot;section-9&quot;&gt;5.5 析取多个值&lt;/h2&gt;
+&lt;h2 id=&quot;55-析取多个值&quot;&gt;5.5 析取多个值&lt;/h2&gt;
 
-&lt;h3 id=&quot;section-10&quot;&gt;5.5.1 切割数组&lt;/h3&gt;
+&lt;h3 id=&quot;551-切割数组&quot;&gt;5.5.1 切割数组&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-11&quot;&gt;5.5.2 数组分块&lt;/h3&gt;
+&lt;h3 id=&quot;552-数组分块&quot;&gt;5.5.2 数组分块&lt;/h3&gt;
 
-&lt;h3 id=&quot;keyvalue&quot;&gt;5.5.3 键(Key)和值(Value)&lt;/h3&gt;
+&lt;h3 id=&quot;553-键key和值value&quot;&gt;5.5.3 键(Key)和值(Value)&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-12&quot;&gt;5.5.4 检查元素是否存在&lt;/h3&gt;
+&lt;h3 id=&quot;554-检查元素是否存在&quot;&gt;5.5.4 检查元素是否存在&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-13&quot;&gt;5.5.5 在数组中删除和插入元素&lt;/h3&gt;
+&lt;h3 id=&quot;555-在数组中删除和插入元素&quot;&gt;5.5.5 在数组中删除和插入元素&lt;/h3&gt;
 
-&lt;h2 id=&quot;section-14&quot;&gt;5.6 数组和变量间的转换&lt;/h2&gt;
+&lt;h2 id=&quot;56-数组和变量间的转换&quot;&gt;5.6 数组和变量间的转换&lt;/h2&gt;
 
-&lt;h3 id=&quot;section-15&quot;&gt;5.6.1 从数组创建变量&lt;/h3&gt;
+&lt;h3 id=&quot;561-从数组创建变量&quot;&gt;5.6.1 从数组创建变量&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-16&quot;&gt;5.6.2 从变量创建数组&lt;/h3&gt;
+&lt;h3 id=&quot;562-从变量创建数组&quot;&gt;5.6.2 从变量创建数组&lt;/h3&gt;
 
-&lt;h2 id=&quot;section-17&quot;&gt;5.7 遍历数组&lt;/h2&gt;
+&lt;h2 id=&quot;57-遍历数组&quot;&gt;5.7 遍历数组&lt;/h2&gt;
 
-&lt;h3 id=&quot;foreach&quot;&gt;5.7.1 foreach结构&lt;/h3&gt;
+&lt;h3 id=&quot;571-foreach结构&quot;&gt;5.7.1 foreach结构&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-18&quot;&gt;5.7.2 迭代器函数&lt;/h3&gt;
+&lt;h3 id=&quot;572-迭代器函数&quot;&gt;5.7.2 迭代器函数&lt;/h3&gt;
 
-&lt;h3 id=&quot;for&quot;&gt;5.7.3 使用for循环&lt;/h3&gt;
+&lt;h3 id=&quot;573-使用for循环&quot;&gt;5.7.3 使用for循环&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-19&quot;&gt;5.7.4 为数组中的每个元素调用函数&lt;/h3&gt;
+&lt;h3 id=&quot;574-为数组中的每个元素调用函数&quot;&gt;5.7.4 为数组中的每个元素调用函数&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-20&quot;&gt;5.7.5 数组归纳&lt;/h3&gt;
+&lt;h3 id=&quot;575-数组归纳&quot;&gt;5.7.5 数组归纳&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-21&quot;&gt;5.7.6 查找元素值&lt;/h3&gt;
+&lt;h3 id=&quot;576-查找元素值&quot;&gt;5.7.6 查找元素值&lt;/h3&gt;
 
-&lt;h2 id=&quot;section-22&quot;&gt;5.8 排序&lt;/h2&gt;
+&lt;h2 id=&quot;58-排序&quot;&gt;5.8 排序&lt;/h2&gt;
 
-&lt;h3 id=&quot;section-23&quot;&gt;5.8.1 一次排序一个数组&lt;/h3&gt;
+&lt;h3 id=&quot;581-一次排序一个数组&quot;&gt;5.8.1 一次排序一个数组&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-24&quot;&gt;5.8.2 按自然顺序排序&lt;/h3&gt;
+&lt;h3 id=&quot;582-按自然顺序排序&quot;&gt;5.8.2 按自然顺序排序&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-25&quot;&gt;5.8.3 一次对多个数组进行排序&lt;/h3&gt;
+&lt;h3 id=&quot;583-一次对多个数组进行排序&quot;&gt;5.8.3 一次对多个数组进行排序&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-26&quot;&gt;5.8.4 翻转数组&lt;/h3&gt;
+&lt;h3 id=&quot;584-翻转数组&quot;&gt;5.8.4 翻转数组&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-27&quot;&gt;5.8.5 随机排序&lt;/h3&gt;
+&lt;h3 id=&quot;585-随机排序&quot;&gt;5.8.5 随机排序&lt;/h3&gt;
 
-&lt;h2 id=&quot;section-28&quot;&gt;5.9 作用于整个数组&lt;/h2&gt;
+&lt;h2 id=&quot;59-作用于整个数组&quot;&gt;5.9 作用于整个数组&lt;/h2&gt;
 
-&lt;h3 id=&quot;section-29&quot;&gt;5.9.1 计算数组的和&lt;/h3&gt;
+&lt;h3 id=&quot;591-计算数组的和&quot;&gt;5.9.1 计算数组的和&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-30&quot;&gt;5.9.2 合并两个数组&lt;/h3&gt;
+&lt;h3 id=&quot;592-合并两个数组&quot;&gt;5.9.2 合并两个数组&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-31&quot;&gt;5.9.3 计算两个数组的不同&lt;/h3&gt;
+&lt;h3 id=&quot;593-计算两个数组的不同&quot;&gt;5.9.3 计算两个数组的不同&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-32&quot;&gt;5.9.4 从数组中过滤元素&lt;/h3&gt;
+&lt;h3 id=&quot;594-从数组中过滤元素&quot;&gt;5.9.4 从数组中过滤元素&lt;/h3&gt;
 
-&lt;h2 id=&quot;section-33&quot;&gt;5.10 使用数组&lt;/h2&gt;
+&lt;h2 id=&quot;510-使用数组&quot;&gt;5.10 使用数组&lt;/h2&gt;
 
-&lt;h3 id=&quot;section-34&quot;&gt;5.10.1 集合&lt;/h3&gt;
+&lt;h3 id=&quot;5101-集合&quot;&gt;5.10.1 集合&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-35&quot;&gt;5.10.2 堆栈&lt;/h3&gt;
+&lt;h3 id=&quot;5102-堆栈&quot;&gt;5.10.2 堆栈&lt;/h3&gt;
 
-&lt;h2 id=&quot;section-36&quot;&gt;5.11 迭代器接口&lt;/h2&gt;
+&lt;h2 id=&quot;511-迭代器接口&quot;&gt;5.11 迭代器接口&lt;/h2&gt;
 </description>
         <pubDate>Thu, 01 Jun 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/php/2017/06/01/Programming_PHP.html</link>
@@ -130,29 +204,29 @@
     
       <item>
         <title>SICP</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;1 构造过程抽象&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;1-构造过程抽象&quot;&gt;1 构造过程抽象&lt;/h1&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;1.1 程序设计的基本元素&lt;/h2&gt;
+&lt;h2 id=&quot;11-程序设计的基本元素&quot;&gt;1.1 程序设计的基本元素&lt;/h2&gt;
 
-&lt;h3 id=&quot;section-2&quot;&gt;1.1.1 表达式&lt;/h3&gt;
+&lt;h3 id=&quot;111-表达式&quot;&gt;1.1.1 表达式&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-3&quot;&gt;1.1.2 命名和环境&lt;/h3&gt;
+&lt;h3 id=&quot;112-命名和环境&quot;&gt;1.1.2 命名和环境&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-4&quot;&gt;1.1.3 组合式的求值&lt;/h3&gt;
+&lt;h3 id=&quot;113-组合式的求值&quot;&gt;1.1.3 组合式的求值&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-5&quot;&gt;1.1.4 复合过程&lt;/h3&gt;
+&lt;h3 id=&quot;114-复合过程&quot;&gt;1.1.4 复合过程&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-6&quot;&gt;1.1.5 过程应用的代换模型&lt;/h3&gt;
+&lt;h3 id=&quot;115-过程应用的代换模型&quot;&gt;1.1.5 过程应用的代换模型&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;应用序和正则序&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;section-7&quot;&gt;1.1.6 条件表达式和谓词&lt;/h3&gt;
+&lt;h3 id=&quot;116-条件表达式和谓词&quot;&gt;1.1.6 条件表达式和谓词&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-8&quot;&gt;1.1.7 实例：采用牛顿法求平方根&lt;/h3&gt;
+&lt;h3 id=&quot;117-实例采用牛顿法求平方根&quot;&gt;1.1.7 实例：采用牛顿法求平方根&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-9&quot;&gt;1.1.8 过程作为黑箱抽象&lt;/h3&gt;
+&lt;h3 id=&quot;118-过程作为黑箱抽象&quot;&gt;1.1.8 过程作为黑箱抽象&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -163,25 +237,25 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;section-10&quot;&gt;1.2 过程与它们所产生的计算&lt;/h2&gt;
+&lt;h2 id=&quot;12-过程与它们所产生的计算&quot;&gt;1.2 过程与它们所产生的计算&lt;/h2&gt;
 
-&lt;h3 id=&quot;section-11&quot;&gt;1.2.1 线性的递归和迭代&lt;/h3&gt;
+&lt;h3 id=&quot;121-线性的递归和迭代&quot;&gt;1.2.1 线性的递归和迭代&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-12&quot;&gt;1.2.2 树形递归(未完成)&lt;/h3&gt;
+&lt;h3 id=&quot;122-树形递归未完成&quot;&gt;1.2.2 树形递归(未完成)&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-13&quot;&gt;1.2.3 增长的阶(未完成)&lt;/h3&gt;
+&lt;h3 id=&quot;123-增长的阶未完成&quot;&gt;1.2.3 增长的阶(未完成)&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-14&quot;&gt;1.2.4 求幂(未完成)&lt;/h3&gt;
+&lt;h3 id=&quot;124-求幂未完成&quot;&gt;1.2.4 求幂(未完成)&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-15&quot;&gt;1.2.5 最大公约数(未完成)&lt;/h3&gt;
+&lt;h3 id=&quot;125-最大公约数未完成&quot;&gt;1.2.5 最大公约数(未完成)&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-16&quot;&gt;1.2.6 实例：素数检测(未完成)&lt;/h3&gt;
+&lt;h3 id=&quot;126-实例素数检测未完成&quot;&gt;1.2.6 实例：素数检测(未完成)&lt;/h3&gt;
 
-&lt;h2 id=&quot;section-17&quot;&gt;1.3 用高阶函数做抽象&lt;/h2&gt;
+&lt;h2 id=&quot;13-用高阶函数做抽象&quot;&gt;1.3 用高阶函数做抽象&lt;/h2&gt;
 
-&lt;h3 id=&quot;section-18&quot;&gt;1.3.1 过程作为参数(未完成)&lt;/h3&gt;
+&lt;h3 id=&quot;131-过程作为参数未完成&quot;&gt;1.3.1 过程作为参数(未完成)&lt;/h3&gt;
 
-&lt;h3 id=&quot;lambda&quot;&gt;1.3.2 用lambda构造过程(未完成)…&lt;/h3&gt;
+&lt;h3 id=&quot;132-用lambda构造过程未完成&quot;&gt;1.3.2 用lambda构造过程(未完成)…&lt;/h3&gt;
 </description>
         <pubDate>Mon, 29 May 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/sicp/2017/05/29/SICP.html</link>
@@ -194,25 +268,25 @@
     
       <item>
         <title>第7章 Web技术</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;处理表单&lt;/h1&gt;
-&lt;h2 id=&quot;section-1&quot;&gt;简介&lt;/h2&gt;
+        <description>&lt;h1 id=&quot;处理表单&quot;&gt;处理表单&lt;/h1&gt;
+&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
 &lt;p&gt;用PHP处理表单是很容易的，表单参数会在$_GET和$_POST数组中。本章会用到很多处理表单的技巧。&lt;/p&gt;
 
-&lt;h2 id=&quot;section-2&quot;&gt;方法&lt;/h2&gt;
+&lt;h2 id=&quot;方法&quot;&gt;方法&lt;/h2&gt;
 
-&lt;h2 id=&quot;section-3&quot;&gt;参数&lt;/h2&gt;
+&lt;h2 id=&quot;参数&quot;&gt;参数&lt;/h2&gt;
 
-&lt;h2 id=&quot;section-4&quot;&gt;自处理页面&lt;/h2&gt;
+&lt;h2 id=&quot;自处理页面&quot;&gt;自处理页面&lt;/h2&gt;
 
-&lt;h2 id=&quot;section-5&quot;&gt;粘性表单&lt;/h2&gt;
+&lt;h2 id=&quot;粘性表单&quot;&gt;粘性表单&lt;/h2&gt;
 
-&lt;h2 id=&quot;section-6&quot;&gt;多值参数&lt;/h2&gt;
+&lt;h2 id=&quot;多值参数&quot;&gt;多值参数&lt;/h2&gt;
 
-&lt;h2 id=&quot;section-7&quot;&gt;粘性多值参数&lt;/h2&gt;
+&lt;h2 id=&quot;粘性多值参数&quot;&gt;粘性多值参数&lt;/h2&gt;
 
-&lt;h2 id=&quot;section-8&quot;&gt;文件上传&lt;/h2&gt;
+&lt;h2 id=&quot;文件上传&quot;&gt;文件上传&lt;/h2&gt;
 
-&lt;h1 id=&quot;section-9&quot;&gt;参考资料：&lt;/h1&gt;
+&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1gfh3uWN&quot;&gt;«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Apr 2017 00:00:00 +0800</pubDate>
@@ -226,7 +300,7 @@
     
       <item>
         <title>服务器信息</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;定义&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;定义&quot;&gt;定义&lt;/h1&gt;
 &lt;p&gt;$_SERVER数组包含大量有用的网页服务器信息。大部分信息来自于CGI规范要求的环境变量(http://bit.ly/Vw912h)。
 这是一个来自CGI的完整的$_SERVER列表。&lt;/p&gt;
 
@@ -338,7 +412,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;参考资料：&lt;/h1&gt;
+&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1gfh3uWN&quot;&gt;«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Apr 2017 00:00:00 +0800</pubDate>
@@ -352,27 +426,27 @@
     
       <item>
         <title>EGPCS变量</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;定义&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;定义&quot;&gt;定义&lt;/h1&gt;
 &lt;p&gt;服务器配置和请求的信息(包含表单参数和cookie)以不同的方式在PHP脚本中访问，这些信息放在一起被标识为EGPCS(environment、GET、POST、cookie和server)。&lt;/p&gt;
 
 &lt;p&gt;PHP可创建包含EGPCS信息的6个全局数据。&lt;/p&gt;
-&lt;h1 id=&quot;cookie&quot;&gt;$_COOKIE&lt;/h1&gt;
+&lt;h1 id=&quot;_cookie&quot;&gt;$_COOKIE&lt;/h1&gt;
 &lt;p&gt;包含作为请求中cookie数值的部分，数组的键名是表单参数。&lt;/p&gt;
-&lt;h1 id=&quot;get&quot;&gt;$_GET&lt;/h1&gt;
+&lt;h1 id=&quot;_get&quot;&gt;$_GET&lt;/h1&gt;
 &lt;p&gt;包含作为GET请求中参数的部分，数组的键名是表单参数。&lt;/p&gt;
-&lt;h1 id=&quot;post&quot;&gt;$_POST&lt;/h1&gt;
+&lt;h1 id=&quot;_post&quot;&gt;$_POST&lt;/h1&gt;
 &lt;p&gt;包含作为POST请求中参数的部分，数组的键名是表单参数。&lt;/p&gt;
-&lt;h1 id=&quot;files&quot;&gt;$_FILES&lt;/h1&gt;
+&lt;h1 id=&quot;_files&quot;&gt;$_FILES&lt;/h1&gt;
 &lt;p&gt;包含上传文件的信息。&lt;/p&gt;
-&lt;h1 id=&quot;server&quot;&gt;$_SERVER&lt;/h1&gt;
+&lt;h1 id=&quot;_server&quot;&gt;$_SERVER&lt;/h1&gt;
 &lt;p&gt;包含网页服务器中有用的信息。&lt;/p&gt;
-&lt;h1 id=&quot;env&quot;&gt;$_ENV&lt;/h1&gt;
+&lt;h1 id=&quot;_env&quot;&gt;$_ENV&lt;/h1&gt;
 &lt;p&gt;包含环境变量数值，数组的键名是环境变量的名字。&lt;/p&gt;
-&lt;h1 id=&quot;section-1&quot;&gt;可见性&lt;/h1&gt;
+&lt;h1 id=&quot;可见性&quot;&gt;可见性&lt;/h1&gt;
 &lt;p&gt;这些变量不仅仅是全局的，而且在函数定义内部也是可见的。&lt;/p&gt;
-&lt;h1 id=&quot;request&quot;&gt;$_REQUEST&lt;/h1&gt;
+&lt;h1 id=&quot;_request&quot;&gt;$_REQUEST&lt;/h1&gt;
 &lt;p&gt;$_REQUEST数组也会自动创建。该数组是包含$_GET、$_POST和$_COOKIES所有信息的一个组合。&lt;/p&gt;
-&lt;h1 id=&quot;section-2&quot;&gt;参考资料：&lt;/h1&gt;
+&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1gfh3uWN&quot;&gt;«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 20 Apr 2017 00:00:00 +0800</pubDate>
@@ -386,11 +460,11 @@
     
       <item>
         <title>HTTP基础</title>
-        <description>&lt;h1 id=&quot;http&quot;&gt;HTTP协议的用途&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;http协议的用途&quot;&gt;HTTP协议的用途&lt;/h1&gt;
 &lt;p&gt;网页运行在HTTP(超文本传输协议)之上。这个协议支配网页浏览器如何从服务器请求文件和如何从服务器发回文件。&lt;/p&gt;
-&lt;h1 id=&quot;http-1&quot;&gt;HTTP协议的运行过程&lt;/h1&gt;
+&lt;h1 id=&quot;http协议的运行过程&quot;&gt;HTTP协议的运行过程&lt;/h1&gt;
 &lt;p&gt;当浏览器请求一个网页时，它会发送HTTP请求消息到网页服务器。请求消息包含一些头信息，有时也会包含一些内容。网页服务器用一个回复消息来响应，它总是包含头部信息并且经常包含内容。&lt;/p&gt;
-&lt;h1 id=&quot;http-2&quot;&gt;HTTP请求&lt;/h1&gt;
+&lt;h1 id=&quot;http请求&quot;&gt;HTTP请求&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;首行
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;GET /index.html HTTP/1.1
@@ -414,7 +488,7 @@ User-Agent头提供了浏览器的相关信息，Accept头制定了浏览器可�
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;http-3&quot;&gt;HTTP响应&lt;/h1&gt;
+&lt;h1 id=&quot;http响应&quot;&gt;HTTP响应&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;流程&lt;/p&gt;
@@ -446,10 +520,10 @@ Content-Length: 1845
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;http-4&quot;&gt;常用HTTP方法&lt;/h1&gt;
+&lt;h1 id=&quot;常用http方法&quot;&gt;常用HTTP方法&lt;/h1&gt;
 &lt;p&gt;最常用的HTTP方法是GET和POST。GET方法用来检索信息，例如服务器上的一个文档、一张图片或一个数据库查询的结果。POST方法意指传递信息，例如要存储信用卡号码或信息到服务器数据库。GET方法等同于用户在网页浏览器上输入一个URL或单击一个链接。当用户提交一个表单时，GET和POST方法都可以用，只需为form标签指定method属性。&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;参考资料：&lt;/h1&gt;
+&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1gfh3uWN&quot;&gt;«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 19 Apr 2017 00:00:00 +0800</pubDate>
@@ -463,21 +537,21 @@ Content-Length: 1845
     
       <item>
         <title>代码重构:函数</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;目的&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;目的&quot;&gt;目的&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;易读&lt;/li&gt;
   &lt;li&gt;易维护&lt;/li&gt;
   &lt;li&gt;可测试&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;方法&lt;/h1&gt;
+&lt;h1 id=&quot;方法&quot;&gt;方法&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;短&lt;/li&gt;
   &lt;li&gt;只做一件事&lt;/li&gt;
   &lt;li&gt;向下规则(层级)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;参考资料：&lt;/h1&gt;
+&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1hssVh20&quot;&gt;«Clean Code(代码整洁之道)» Robert C. Martin&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Apr 2017 00:00:00 +0800</pubDate>
@@ -491,19 +565,19 @@ Content-Length: 1845
     
       <item>
         <title>单元测试1</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;意义&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;意义&quot;&gt;意义&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;某种意义上来说，开发会破坏系统的运行。而单元测试能保障我们不必担心对代码的修改。&lt;/li&gt;
   &lt;li&gt;代码可测试，通常意味着代码符合单一职责原则。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;方法&lt;/h1&gt;
+&lt;h1 id=&quot;方法&quot;&gt;方法&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;phpunit&lt;/li&gt;
   &lt;li&gt;测试驱动开发(TDD)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;参考资料：&lt;/h1&gt;
+&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.phpunit.cn/&quot;&gt;PHPUnit中文官网&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Apr 2017 00:00:00 +0800</pubDate>
@@ -536,7 +610,7 @@ Content-Length: 1845
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;表2-1: 编辑命令&lt;/h1&gt;
+&lt;h1 id=&quot;表2-1-编辑命令&quot;&gt;表2-1: 编辑命令&lt;/h1&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -599,7 +673,7 @@ Content-Length: 1845
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;表2-2: 光标移动命令&lt;/h1&gt;
+&lt;h1 id=&quot;表2-2-光标移动命令&quot;&gt;表2-2: 光标移动命令&lt;/h1&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -644,7 +718,7 @@ Content-Length: 1845
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;表2-3: 其他操作&lt;/h1&gt;
+&lt;h1 id=&quot;表2-3-其他操作&quot;&gt;表2-3: 其他操作&lt;/h1&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -673,7 +747,7 @@ Content-Length: 1845
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;section-3&quot;&gt;表2-4: 文本创建与操纵命令&lt;/h1&gt;
+&lt;h1 id=&quot;表2-4-文本创建与操纵命令&quot;&gt;表2-4: 文本创建与操纵命令&lt;/h1&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -738,7 +812,7 @@ Content-Length: 1845
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;section-4&quot;&gt;表3-1 : 移动命令&lt;/h1&gt;
+&lt;h1 id=&quot;表3-1--移动命令&quot;&gt;表3-1 : 移动命令&lt;/h1&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -923,7 +997,7 @@ Content-Length: 1845
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;section-5&quot;&gt;表4-1: 更多的编辑命令&lt;/h1&gt;
+&lt;h1 id=&quot;表4-1-更多的编辑命令&quot;&gt;表4-1: 更多的编辑命令&lt;/h1&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -998,7 +1072,7 @@ Content-Length: 1845
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;section-6&quot;&gt;表4-2: 命令行选项&lt;/h1&gt;
+&lt;h1 id=&quot;表4-2-命令行选项&quot;&gt;表4-2: 命令行选项&lt;/h1&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -1035,7 +1109,7 @@ Content-Length: 1845
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;section-7&quot;&gt;表4-3:缓冲区名称&lt;/h1&gt;
+&lt;h1 id=&quot;表4-3缓冲区名称&quot;&gt;表4-3:缓冲区名称&lt;/h1&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -1056,7 +1130,7 @@ Content-Length: 1845
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&quot;section-8&quot;&gt;表4-4: 缓冲区与标记命令&lt;/h1&gt;
+&lt;h1 id=&quot;表4-4-缓冲区与标记命令&quot;&gt;表4-4: 缓冲区与标记命令&lt;/h1&gt;
 
 &lt;table&gt;
   &lt;tbody&gt;
@@ -1093,34 +1167,6 @@ Content-Length: 1845
         
         
         <category>vim</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 15 Jul 2016 21:17:13 +0800</pubDate>
-        <link>http://localhost:4000/jekyll/update/2016/07/15/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/07/15/welcome-to-jekyll.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
         
       </item>
     
