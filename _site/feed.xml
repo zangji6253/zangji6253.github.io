@@ -1,1169 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>张戬的博客</title>
+    <title>j的博客</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Jul 2017 15:23:09 +0800</pubDate>
-    <lastBuildDate>Tue, 25 Jul 2017 15:23:09 +0800</lastBuildDate>
+    <pubDate>Thu, 27 Jul 2017 16:18:09 +0800</pubDate>
+    <lastBuildDate>Thu, 27 Jul 2017 16:18:09 +0800</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
-        <title>Linux path</title>
-        <description>&lt;h1 id=&quot;查看path&quot;&gt;查看PATH：&lt;/h1&gt;
-&lt;p&gt;echo $PATH&lt;/p&gt;
+        <title>vim reload</title>
+        <description>&lt;p&gt;:e&lt;/p&gt;
 
-&lt;p&gt;以添加mongodb server为列&lt;/p&gt;
+&lt;p&gt;:e!&lt;/p&gt;
 
-&lt;h1 id=&quot;修改方法一&quot;&gt;修改方法一：&lt;/h1&gt;
-&lt;p&gt;export PATH=/usr/local/mongodb/bin:$PATH&lt;/p&gt;
+&lt;p&gt;http://blog.csdn.net/race604/article/details/7314082&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/vim/2017/07/27/vim_reload.html</link>
+        <guid isPermaLink="true">http://localhost:4000/vim/2017/07/27/vim_reload.html</guid>
+        
+        
+        <category>vim</category>
+        
+      </item>
+    
+      <item>
+        <title></title>
+        <description>
+</description>
+        <pubDate>Wed, 26 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/07/26/vss_checkout.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/07/26/vss_checkout.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>del ^M</title>
+        <description>&lt;p&gt;:&lt;/p&gt;
 
-&lt;p&gt;//配置完后可以通过echo $PATH查看配置结果。&lt;/p&gt;
+&lt;p&gt;%s/\r//g&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/vim/2017/07/26/vim_del_m.html</link>
+        <guid isPermaLink="true">http://localhost:4000/vim/2017/07/26/vim_del_m.html</guid>
+        
+        
+        <category>vim</category>
+        
+      </item>
+    
+      <item>
+        <title>vim collapse</title>
+        <description>&lt;p&gt;{&lt;/p&gt;
 
-&lt;p&gt;生效方法：立即生效&lt;/p&gt;
+&lt;p&gt;zf%&lt;/p&gt;
 
-&lt;p&gt;有效期限：临时改变，只能在当前的终端窗口中有效，当前窗口关闭后就会恢复原有的path配置&lt;/p&gt;
+&lt;p&gt;zc&lt;/p&gt;
 
-&lt;p&gt;用户局限：仅对当前用户&lt;/p&gt;
+&lt;p&gt;zo&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/vim/2017/07/26/vim_collapse.html</link>
+        <guid isPermaLink="true">http://localhost:4000/vim/2017/07/26/vim_collapse.html</guid>
+        
+        
+        <category>vim</category>
+        
+      </item>
+    
+      <item>
+        <title>mysql remark</title>
+        <description>&lt;p&gt;select * from information_schema.columns where table_schema = ‘dev’ and table_name = ‘score_list’;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/mysql/2017/07/26/mysql_remark.html</link>
+        <guid isPermaLink="true">http://localhost:4000/mysql/2017/07/26/mysql_remark.html</guid>
+        
+        
+        <category>mysql</category>
+        
+      </item>
+    
+      <item>
+        <title>git log</title>
+        <description>&lt;p&gt;–stat&lt;/p&gt;
 
-&lt;h1 id=&quot;修改方法二&quot;&gt;修改方法二：&lt;/h1&gt;
-&lt;p&gt;通过修改.bashrc文件:&lt;/p&gt;
+&lt;p&gt;-2&lt;/p&gt;
 
-&lt;p&gt;vim ~/.bashrc&lt;/p&gt;
+&lt;p&gt;-p&lt;/p&gt;
 
-&lt;p&gt;//在最后一行添上：&lt;/p&gt;
+&lt;p&gt;http://blog.csdn.net/wh_19910525/article/details/7468549&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/git/2017/07/26/git_log.html</link>
+        <guid isPermaLink="true">http://localhost:4000/git/2017/07/26/git_log.html</guid>
+        
+        
+        <category>git</category>
+        
+      </item>
+    
+      <item>
+        <title>firefox favorite</title>
+        <description>&lt;p&gt;:bmark&lt;/p&gt;
 
-&lt;p&gt;export PATH=/usr/local/mongodb/bin:$PATH&lt;/p&gt;
+&lt;p&gt;:qmark&lt;/p&gt;
 
-&lt;p&gt;生效方法：（有以下两种）&lt;/p&gt;
-
-&lt;p&gt;1、关闭当前终端窗口，重新打开一个新终端窗口就能生效&lt;/p&gt;
-
-&lt;p&gt;2、输入“source ~/.bashrc”命令，立即生效&lt;/p&gt;
-
-&lt;p&gt;有效期限：永久有效&lt;/p&gt;
-
-&lt;p&gt;用户局限：仅对当前用户&lt;/p&gt;
-
-&lt;h1 id=&quot;修改方法三&quot;&gt;修改方法三:&lt;/h1&gt;
-&lt;p&gt;通过修改profile文件:&lt;/p&gt;
-
-&lt;p&gt;vim /etc/profile&lt;/p&gt;
-
-&lt;p&gt;/export PATH //找到设置PATH的行，添加&lt;/p&gt;
-
-&lt;p&gt;export PATH=/usr/local/mongodb/bin:$PATH&lt;/p&gt;
-
-&lt;p&gt;生效方法：系统重启&lt;/p&gt;
-
-&lt;p&gt;有效期限：永久有效&lt;/p&gt;
-
-&lt;p&gt;用户局限：对所有用户&lt;/p&gt;
-
-&lt;h1 id=&quot;修改方法四&quot;&gt;修改方法四:&lt;/h1&gt;
-&lt;p&gt;通过修改environment文件:&lt;/p&gt;
-
-&lt;p&gt;vim /etc/environment&lt;/p&gt;
-
-&lt;p&gt;在PATH=”/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games”中加入“:/usr/local/mongodb/bin”&lt;/p&gt;
-
-&lt;p&gt;生效方法：系统重启&lt;/p&gt;
-
-&lt;p&gt;有效期限：永久有效&lt;/p&gt;
-
-&lt;p&gt;用户局限：对所有用户&lt;/p&gt;
+&lt;p&gt;http://blog.csdn.net/ddyyll988/article/details/51590073&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/07/26/firefox_favorite.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/07/26/firefox_favorite.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>axure tooltip</title>
+        <description>&lt;p&gt;http://jingyan.baidu.com/article/3c48dd34ba9d36e10be35838.html&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/axure/2017/07/26/axure_tooltip.html</link>
+        <guid isPermaLink="true">http://localhost:4000/axure/2017/07/26/axure_tooltip.html</guid>
+        
+        
+        <category>axure</category>
+        
+      </item>
+    
+      <item>
+        <title>axure hidden</title>
+        <description>&lt;p&gt;http://blog.csdn.net/u010191243/article/details/41008707&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Jul 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/axure/2017/07/26/axure_hidden.html</link>
+        <guid isPermaLink="true">http://localhost:4000/axure/2017/07/26/axure_hidden.html</guid>
+        
+        
+        <category>axure</category>
+        
+      </item>
+    
+      <item>
+        <title>vim format </title>
+        <description>&lt;h1 id=&quot;格式化代码以下是按键&quot;&gt;格式化代码：以下是按键&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gg
+shift + v
+shifg + g
+=
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Tue, 25 Jul 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/php/2017/07/25/linux_path.html</link>
-        <guid isPermaLink="true">http://localhost:4000/php/2017/07/25/linux_path.html</guid>
-        
-        
-        <category>php</category>
-        
-      </item>
-    
-      <item>
-        <title>Programming PHP</title>
-        <description>&lt;h1 id=&quot;第五章-数组&quot;&gt;第五章 数组&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;PHP支持标量的数据类型(由单一的值来表示)和混合数组类型(其中可能含有多种数据类型和多个值)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;数组(array)是混合类型之一，是数据值的集合，按有序的“键－值”对应关系来组织结构。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;51-索引数组和关联数组&quot;&gt;5.1 索引数组和关联数组&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;索引(indexed)数组的键名(key)是整数并且从0开始。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;关联(associative)数组的键名是字符串，像有两个列的数据表：第一列是用于访问键值的键名(key)，第二列示键值(value)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PHP内部将所有的数组都存储为关联数组，所以关联数组和索引数组的唯一区别在于键(key)是什么。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在这两种情况下，键都是唯一的。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PHP数组中的元素有不依赖于键和值的内部顺序，未排序前这个顺序就是把值插入数组的顺序。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;52-识别数组元素&quot;&gt;5.2 识别数组元素&lt;/h2&gt;
-
-&lt;h2 id=&quot;53-在数组中存储数据&quot;&gt;5.3 在数组中存储数据&lt;/h2&gt;
-
-&lt;h3 id=&quot;531-在数组末尾添加值&quot;&gt;5.3.1 在数组末尾添加值&lt;/h3&gt;
-
-&lt;h3 id=&quot;532-指定值的范围&quot;&gt;5.3.2 指定值的范围&lt;/h3&gt;
-
-&lt;h3 id=&quot;533-获得数组大小&quot;&gt;5.3.3 获得数组大小&lt;/h3&gt;
-
-&lt;h3 id=&quot;534-填充数组&quot;&gt;5.3.4 填充数组&lt;/h3&gt;
-
-&lt;h2 id=&quot;54-多维数组&quot;&gt;5.4 多维数组&lt;/h2&gt;
-
-&lt;h2 id=&quot;55-析取多个值&quot;&gt;5.5 析取多个值&lt;/h2&gt;
-
-&lt;h3 id=&quot;551-切割数组&quot;&gt;5.5.1 切割数组&lt;/h3&gt;
-
-&lt;h3 id=&quot;552-数组分块&quot;&gt;5.5.2 数组分块&lt;/h3&gt;
-
-&lt;h3 id=&quot;553-键key和值value&quot;&gt;5.5.3 键(Key)和值(Value)&lt;/h3&gt;
-
-&lt;h3 id=&quot;554-检查元素是否存在&quot;&gt;5.5.4 检查元素是否存在&lt;/h3&gt;
-
-&lt;h3 id=&quot;555-在数组中删除和插入元素&quot;&gt;5.5.5 在数组中删除和插入元素&lt;/h3&gt;
-
-&lt;h2 id=&quot;56-数组和变量间的转换&quot;&gt;5.6 数组和变量间的转换&lt;/h2&gt;
-
-&lt;h3 id=&quot;561-从数组创建变量&quot;&gt;5.6.1 从数组创建变量&lt;/h3&gt;
-
-&lt;h3 id=&quot;562-从变量创建数组&quot;&gt;5.6.2 从变量创建数组&lt;/h3&gt;
-
-&lt;h2 id=&quot;57-遍历数组&quot;&gt;5.7 遍历数组&lt;/h2&gt;
-
-&lt;h3 id=&quot;571-foreach结构&quot;&gt;5.7.1 foreach结构&lt;/h3&gt;
-
-&lt;h3 id=&quot;572-迭代器函数&quot;&gt;5.7.2 迭代器函数&lt;/h3&gt;
-
-&lt;h3 id=&quot;573-使用for循环&quot;&gt;5.7.3 使用for循环&lt;/h3&gt;
-
-&lt;h3 id=&quot;574-为数组中的每个元素调用函数&quot;&gt;5.7.4 为数组中的每个元素调用函数&lt;/h3&gt;
-
-&lt;h3 id=&quot;575-数组归纳&quot;&gt;5.7.5 数组归纳&lt;/h3&gt;
-
-&lt;h3 id=&quot;576-查找元素值&quot;&gt;5.7.6 查找元素值&lt;/h3&gt;
-
-&lt;h2 id=&quot;58-排序&quot;&gt;5.8 排序&lt;/h2&gt;
-
-&lt;h3 id=&quot;581-一次排序一个数组&quot;&gt;5.8.1 一次排序一个数组&lt;/h3&gt;
-
-&lt;h3 id=&quot;582-按自然顺序排序&quot;&gt;5.8.2 按自然顺序排序&lt;/h3&gt;
-
-&lt;h3 id=&quot;583-一次对多个数组进行排序&quot;&gt;5.8.3 一次对多个数组进行排序&lt;/h3&gt;
-
-&lt;h3 id=&quot;584-翻转数组&quot;&gt;5.8.4 翻转数组&lt;/h3&gt;
-
-&lt;h3 id=&quot;585-随机排序&quot;&gt;5.8.5 随机排序&lt;/h3&gt;
-
-&lt;h2 id=&quot;59-作用于整个数组&quot;&gt;5.9 作用于整个数组&lt;/h2&gt;
-
-&lt;h3 id=&quot;591-计算数组的和&quot;&gt;5.9.1 计算数组的和&lt;/h3&gt;
-
-&lt;h3 id=&quot;592-合并两个数组&quot;&gt;5.9.2 合并两个数组&lt;/h3&gt;
-
-&lt;h3 id=&quot;593-计算两个数组的不同&quot;&gt;5.9.3 计算两个数组的不同&lt;/h3&gt;
-
-&lt;h3 id=&quot;594-从数组中过滤元素&quot;&gt;5.9.4 从数组中过滤元素&lt;/h3&gt;
-
-&lt;h2 id=&quot;510-使用数组&quot;&gt;5.10 使用数组&lt;/h2&gt;
-
-&lt;h3 id=&quot;5101-集合&quot;&gt;5.10.1 集合&lt;/h3&gt;
-
-&lt;h3 id=&quot;5102-堆栈&quot;&gt;5.10.2 堆栈&lt;/h3&gt;
-
-&lt;h2 id=&quot;511-迭代器接口&quot;&gt;5.11 迭代器接口&lt;/h2&gt;
-</description>
-        <pubDate>Thu, 01 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/php/2017/06/01/Programming_PHP.html</link>
-        <guid isPermaLink="true">http://localhost:4000/php/2017/06/01/Programming_PHP.html</guid>
-        
-        
-        <category>php</category>
-        
-      </item>
-    
-      <item>
-        <title>SICP</title>
-        <description>&lt;h1 id=&quot;1-构造过程抽象&quot;&gt;1 构造过程抽象&lt;/h1&gt;
-
-&lt;h2 id=&quot;11-程序设计的基本元素&quot;&gt;1.1 程序设计的基本元素&lt;/h2&gt;
-
-&lt;h3 id=&quot;111-表达式&quot;&gt;1.1.1 表达式&lt;/h3&gt;
-
-&lt;h3 id=&quot;112-命名和环境&quot;&gt;1.1.2 命名和环境&lt;/h3&gt;
-
-&lt;h3 id=&quot;113-组合式的求值&quot;&gt;1.1.3 组合式的求值&lt;/h3&gt;
-
-&lt;h3 id=&quot;114-复合过程&quot;&gt;1.1.4 复合过程&lt;/h3&gt;
-
-&lt;h3 id=&quot;115-过程应用的代换模型&quot;&gt;1.1.5 过程应用的代换模型&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;应用序和正则序&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;116-条件表达式和谓词&quot;&gt;1.1.6 条件表达式和谓词&lt;/h3&gt;
-
-&lt;h3 id=&quot;117-实例采用牛顿法求平方根&quot;&gt;1.1.7 实例：采用牛顿法求平方根&lt;/h3&gt;
-
-&lt;h3 id=&quot;118-过程作为黑箱抽象&quot;&gt;1.1.8 过程作为黑箱抽象&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;局部名&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;内部定义和块结构&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;12-过程与它们所产生的计算&quot;&gt;1.2 过程与它们所产生的计算&lt;/h2&gt;
-
-&lt;h3 id=&quot;121-线性的递归和迭代&quot;&gt;1.2.1 线性的递归和迭代&lt;/h3&gt;
-
-&lt;h3 id=&quot;122-树形递归未完成&quot;&gt;1.2.2 树形递归(未完成)&lt;/h3&gt;
-
-&lt;h3 id=&quot;123-增长的阶未完成&quot;&gt;1.2.3 增长的阶(未完成)&lt;/h3&gt;
-
-&lt;h3 id=&quot;124-求幂未完成&quot;&gt;1.2.4 求幂(未完成)&lt;/h3&gt;
-
-&lt;h3 id=&quot;125-最大公约数未完成&quot;&gt;1.2.5 最大公约数(未完成)&lt;/h3&gt;
-
-&lt;h3 id=&quot;126-实例素数检测未完成&quot;&gt;1.2.6 实例：素数检测(未完成)&lt;/h3&gt;
-
-&lt;h2 id=&quot;13-用高阶函数做抽象&quot;&gt;1.3 用高阶函数做抽象&lt;/h2&gt;
-
-&lt;h3 id=&quot;131-过程作为参数未完成&quot;&gt;1.3.1 过程作为参数(未完成)&lt;/h3&gt;
-
-&lt;h3 id=&quot;132-用lambda构造过程未完成&quot;&gt;1.3.2 用lambda构造过程(未完成)…&lt;/h3&gt;
-</description>
-        <pubDate>Mon, 29 May 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/sicp/2017/05/29/SICP.html</link>
-        <guid isPermaLink="true">http://localhost:4000/sicp/2017/05/29/SICP.html</guid>
-        
-        
-        <category>sicp</category>
-        
-      </item>
-    
-      <item>
-        <title>第7章 Web技术</title>
-        <description>&lt;h1 id=&quot;处理表单&quot;&gt;处理表单&lt;/h1&gt;
-&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
-&lt;p&gt;用PHP处理表单是很容易的，表单参数会在$_GET和$_POST数组中。本章会用到很多处理表单的技巧。&lt;/p&gt;
-
-&lt;h2 id=&quot;方法&quot;&gt;方法&lt;/h2&gt;
-
-&lt;h2 id=&quot;参数&quot;&gt;参数&lt;/h2&gt;
-
-&lt;h2 id=&quot;自处理页面&quot;&gt;自处理页面&lt;/h2&gt;
-
-&lt;h2 id=&quot;粘性表单&quot;&gt;粘性表单&lt;/h2&gt;
-
-&lt;h2 id=&quot;多值参数&quot;&gt;多值参数&lt;/h2&gt;
-
-&lt;h2 id=&quot;粘性多值参数&quot;&gt;粘性多值参数&lt;/h2&gt;
-
-&lt;h2 id=&quot;文件上传&quot;&gt;文件上传&lt;/h2&gt;
-
-&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1gfh3uWN&quot;&gt;«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 24 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/php/2017/04/24/FORM.html</link>
-        <guid isPermaLink="true">http://localhost:4000/php/2017/04/24/FORM.html</guid>
-        
-        
-        <category>php</category>
-        
-      </item>
-    
-      <item>
-        <title>服务器信息</title>
-        <description>&lt;h1 id=&quot;定义&quot;&gt;定义&lt;/h1&gt;
-&lt;p&gt;$_SERVER数组包含大量有用的网页服务器信息。大部分信息来自于CGI规范要求的环境变量(http://bit.ly/Vw912h)。
-这是一个来自CGI的完整的$_SERVER列表。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;PHP_SELF&lt;/p&gt;
-
-    &lt;p&gt;当前执行脚本的文件名，相对于文档根目录(例如，/store/cart.php)。这个变量在创建自引用脚本时非常有用。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SERVER_SOFTWARE&lt;/p&gt;
-
-    &lt;p&gt;服务器标识字符串(例如，Apache/1.3.33(Unix) mod_perl/1.26 PHP/ 5.0.4)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SERVER_NAME&lt;/p&gt;
-
-    &lt;p&gt;从当前引用的URL的主机名、DNS别名或用于自引用的URL的IP地址(例如，www.example.com)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;GATEWAY_INTERFACE&lt;/p&gt;
-
-    &lt;p&gt;服务器使用的CGI标准的版本(例如，CGI/1.1)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SERVER_PROTOCAL&lt;/p&gt;
-
-    &lt;p&gt;请求页面时通信协议的名称和版本(例如，HTTP/1.0)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SERVER_PORT&lt;/p&gt;
-
-    &lt;p&gt;服务器发送请求的端口号(例如，80)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;REQUEST_METHOD&lt;/p&gt;
-
-    &lt;p&gt;客户端获取页面所使用的方法(例如, GET)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PATH_INFO&lt;/p&gt;
-
-    &lt;p&gt;客户端提供的真实路径(例如，/list/users)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PATH_TRANSLATED&lt;/p&gt;
-
-    &lt;p&gt;根据PATH_INFO的值转换到服务器的基本路径(例如，/home/httpd/htdocs/list/users)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SCRIPT_NAME&lt;/p&gt;
-
-    &lt;p&gt;当前页面的URL路径，对当前自引用脚本很有用(例如，/~me/menu.php)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;QUERY_STRING&lt;/p&gt;
-
-    &lt;p&gt;URL中?后面的所有信息(例如，name=Fred+age=35)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;REMOTE_HOST&lt;/p&gt;
-
-    &lt;p&gt;请求当前页面的用户的主机名。(例如，dialup-192-168-0-1.example.com (http://dialup-192-168-0-1.example.com))。如果服务器没有DNS，这就是空的，只有REMOTE_ADDR的信息。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;REMOTE_ADDR&lt;/p&gt;
-
-    &lt;p&gt;一个包含请求当前页面IP地址的字符串(例如,192.168.0.250)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;AUTH_TYPE&lt;/p&gt;
-
-    &lt;p&gt;如果页面是受密码保护的，这代表保护页面的认证方法(例如，basci)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;REMOTE_USER&lt;/p&gt;
-
-    &lt;p&gt;如果页面是受密码保护的，这是认证客户端的用户名(例如，Fred)。注意，密码是无法获取的。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;REMOTE_IDENT&lt;/p&gt;
-
-    &lt;p&gt;如果服务器配置了身份认证系统identd(RFC 931)，这是从主机获取的用户名(例如，barney)。由于很容易伪装，不要使用该字符串做认证。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;CONTNT_TYPE&lt;/p&gt;
-
-    &lt;p&gt;PUT和POST附加信息的内容类型(例如，x-url-encoded)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;CONTENT_LENGTH&lt;/p&gt;
-
-    &lt;p&gt;PUT和POST附加信息的长度(例如，3952)。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Apache服务器还会为每个请求的HTTP头部在$&lt;em&gt;SERVER数组中创建实体。每个键名、头名会转换为大写，连字符-会转换为下划线&lt;/em&gt;，并在前面加上HTTP_。例如，User-Agent头会有一个键名为HTTP_USER_AGENT的实体。最常用的两个头部是：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;HTTP_USER_AGENT&lt;/p&gt;
-
-    &lt;p&gt;浏览器的标识字符串(例如，Mozilla/5.0(Windows 2000;U) Opera 6.0 [en])。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;HTTP_REFERER&lt;/p&gt;
-
-    &lt;p&gt;浏览器表示当前页面来自于哪个页面(例如，http://www.example.com/last_page.html)。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1gfh3uWN&quot;&gt;«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 23 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/php/2017/04/23/SERVER.html</link>
-        <guid isPermaLink="true">http://localhost:4000/php/2017/04/23/SERVER.html</guid>
-        
-        
-        <category>php</category>
-        
-      </item>
-    
-      <item>
-        <title>EGPCS变量</title>
-        <description>&lt;h1 id=&quot;定义&quot;&gt;定义&lt;/h1&gt;
-&lt;p&gt;服务器配置和请求的信息(包含表单参数和cookie)以不同的方式在PHP脚本中访问，这些信息放在一起被标识为EGPCS(environment、GET、POST、cookie和server)。&lt;/p&gt;
-
-&lt;p&gt;PHP可创建包含EGPCS信息的6个全局数据。&lt;/p&gt;
-&lt;h1 id=&quot;_cookie&quot;&gt;$_COOKIE&lt;/h1&gt;
-&lt;p&gt;包含作为请求中cookie数值的部分，数组的键名是表单参数。&lt;/p&gt;
-&lt;h1 id=&quot;_get&quot;&gt;$_GET&lt;/h1&gt;
-&lt;p&gt;包含作为GET请求中参数的部分，数组的键名是表单参数。&lt;/p&gt;
-&lt;h1 id=&quot;_post&quot;&gt;$_POST&lt;/h1&gt;
-&lt;p&gt;包含作为POST请求中参数的部分，数组的键名是表单参数。&lt;/p&gt;
-&lt;h1 id=&quot;_files&quot;&gt;$_FILES&lt;/h1&gt;
-&lt;p&gt;包含上传文件的信息。&lt;/p&gt;
-&lt;h1 id=&quot;_server&quot;&gt;$_SERVER&lt;/h1&gt;
-&lt;p&gt;包含网页服务器中有用的信息。&lt;/p&gt;
-&lt;h1 id=&quot;_env&quot;&gt;$_ENV&lt;/h1&gt;
-&lt;p&gt;包含环境变量数值，数组的键名是环境变量的名字。&lt;/p&gt;
-&lt;h1 id=&quot;可见性&quot;&gt;可见性&lt;/h1&gt;
-&lt;p&gt;这些变量不仅仅是全局的，而且在函数定义内部也是可见的。&lt;/p&gt;
-&lt;h1 id=&quot;_request&quot;&gt;$_REQUEST&lt;/h1&gt;
-&lt;p&gt;$_REQUEST数组也会自动创建。该数组是包含$_GET、$_POST和$_COOKIES所有信息的一个组合。&lt;/p&gt;
-&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1gfh3uWN&quot;&gt;«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 20 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/php/2017/04/20/EGPCS_VARIABLE.html</link>
-        <guid isPermaLink="true">http://localhost:4000/php/2017/04/20/EGPCS_VARIABLE.html</guid>
-        
-        
-        <category>php</category>
-        
-      </item>
-    
-      <item>
-        <title>HTTP基础</title>
-        <description>&lt;h1 id=&quot;http协议的用途&quot;&gt;HTTP协议的用途&lt;/h1&gt;
-&lt;p&gt;网页运行在HTTP(超文本传输协议)之上。这个协议支配网页浏览器如何从服务器请求文件和如何从服务器发回文件。&lt;/p&gt;
-&lt;h1 id=&quot;http协议的运行过程&quot;&gt;HTTP协议的运行过程&lt;/h1&gt;
-&lt;p&gt;当浏览器请求一个网页时，它会发送HTTP请求消息到网页服务器。请求消息包含一些头信息，有时也会包含一些内容。网页服务器用一个回复消息来响应，它总是包含头部信息并且经常包含内容。&lt;/p&gt;
-&lt;h1 id=&quot;http请求&quot;&gt;HTTP请求&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;首行
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;GET /index.html HTTP/1.1
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;p&gt;该行指定了一个HTTP命令，叫做”方法”，紧跟着的是文档地址和所使用的HTTP版本。
-这个例子中，请求使用了GET方法和HTTP1.1版本来请求index.html文档。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;头部信息
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;User-Agent: Mozilla/5.0 (Windows 2000; U) Opera 6.0 [en]
-Accept: image/git, image/jpeg, text/*, */*
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;p&gt;首行过后，在请求包含的头部信息来告诉服务器该请求中额外的数据。
-User-Agent头提供了浏览器的相关信息，Accept头制定了浏览器可以接受的MIME类型。在头部后面，请求包含一个空行来指明头部的结束。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;数据&lt;/p&gt;
-
-    &lt;p&gt;针对方法可用的情况下(例如POST方法)，请求可以包含额外的数据。如果请求不包含任何数据，它将以空行结束。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;http响应&quot;&gt;HTTP响应&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;流程&lt;/p&gt;
-
-    &lt;p&gt;网页服务器收到请求，处理它，然后发送响应。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;首行
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HTTP/1.1 200 OK
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;p&gt;这行指定了协议版本、状态码和状态码的描述。在例子中的情况下，状态码是200，意味着请求是成功的(因此描述是OK)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;头部&lt;/p&gt;
-
-    &lt;p&gt;在状态行后面，响应包含了给客户端额外信息的头部。例如：&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Date: Thu, 31 May 2012 14:07:50 GMT
-Server: Apache/2.2.14 (Ubuntu)
-Content-Type: text/html
-Content-Length: 1845
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;p&gt;服务器头部提供了网页服务器软件的信息，同时Content-Type头指定这个响应数据的MIME类型。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;数据&lt;/p&gt;
-
-    &lt;p&gt;头部过后，响应包含一个空行，紧接着是请求成功的数据。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;常用http方法&quot;&gt;常用HTTP方法&lt;/h1&gt;
-&lt;p&gt;最常用的HTTP方法是GET和POST。GET方法用来检索信息，例如服务器上的一个文档、一张图片或一个数据库查询的结果。POST方法意指传递信息，例如要存储信用卡号码或信息到服务器数据库。GET方法等同于用户在网页浏览器上输入一个URL或单击一个链接。当用户提交一个表单时，GET和POST方法都可以用，只需为form标签指定method属性。&lt;/p&gt;
-
-&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1gfh3uWN&quot;&gt;«PHP编程» Kevin Tatroe  Peter Maclntyre  Rasmus Lerdorf&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 19 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/php/2017/04/19/HTTP-BASICS.html</link>
-        <guid isPermaLink="true">http://localhost:4000/php/2017/04/19/HTTP-BASICS.html</guid>
-        
-        
-        <category>php</category>
-        
-      </item>
-    
-      <item>
-        <title>代码重构:函数</title>
-        <description>&lt;h1 id=&quot;目的&quot;&gt;目的&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;易读&lt;/li&gt;
-  &lt;li&gt;易维护&lt;/li&gt;
-  &lt;li&gt;可测试&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;方法&quot;&gt;方法&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;短&lt;/li&gt;
-  &lt;li&gt;只做一件事&lt;/li&gt;
-  &lt;li&gt;向下规则(层级)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1hssVh20&quot;&gt;«Clean Code(代码整洁之道)» Robert C. Martin&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 14 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/refactor/2017/04/14/REFACTOR.html</link>
-        <guid isPermaLink="true">http://localhost:4000/refactor/2017/04/14/REFACTOR.html</guid>
-        
-        
-        <category>refactor</category>
-        
-      </item>
-    
-      <item>
-        <title>单元测试1</title>
-        <description>&lt;h1 id=&quot;意义&quot;&gt;意义&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;某种意义上来说，开发会破坏系统的运行。而单元测试能保障我们不必担心对代码的修改。&lt;/li&gt;
-  &lt;li&gt;代码可测试，通常意味着代码符合单一职责原则。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;方法&quot;&gt;方法&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;phpunit&lt;/li&gt;
-  &lt;li&gt;测试驱动开发(TDD)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.phpunit.cn/&quot;&gt;PHPUnit中文官网&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 14 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/testunit/2017/04/14/PHPUNIT.html</link>
-        <guid isPermaLink="true">http://localhost:4000/testunit/2017/04/14/PHPUNIT.html</guid>
-        
-        
-        <category>testunit</category>
-        
-      </item>
-    
-      <item>
-        <title>Vim Hotkey</title>
-        <description>&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;按键&lt;/th&gt;
-      &lt;th&gt;结果&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;ZZ&lt;/td&gt;
-      &lt;td&gt;离开并保存&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;e!&lt;/td&gt;
-      &lt;td&gt;恢复上一次存储文件内容&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;表2-1-编辑命令&quot;&gt;表2-1: 编辑命令&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;文本对象&lt;/th&gt;
-      &lt;th&gt;更改&lt;/th&gt;
-      &lt;th&gt;删除&lt;/th&gt;
-      &lt;th&gt;复制&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;一个单词&lt;/td&gt;
-      &lt;td&gt;cw&lt;/td&gt;
-      &lt;td&gt;dw&lt;/td&gt;
-      &lt;td&gt;yw&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;两个单词,不包括标点符号&lt;/td&gt;
-      &lt;td&gt;2cW或c2W&lt;/td&gt;
-      &lt;td&gt;2dW或d2W&lt;/td&gt;
-      &lt;td&gt;2yW或y2W&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;后退三个单词&lt;/td&gt;
-      &lt;td&gt;3cb或c3b&lt;/td&gt;
-      &lt;td&gt;3db或d3b&lt;/td&gt;
-      &lt;td&gt;3yb或y3b&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;一整行&lt;/td&gt;
-      &lt;td&gt;cc&lt;/td&gt;
-      &lt;td&gt;dd&lt;/td&gt;
-      &lt;td&gt;yy或Y&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;到一行的结尾&lt;/td&gt;
-      &lt;td&gt;c$或C&lt;/td&gt;
-      &lt;td&gt;d$或D&lt;/td&gt;
-      &lt;td&gt;y$&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;到一行的开头&lt;/td&gt;
-      &lt;td&gt;c0&lt;/td&gt;
-      &lt;td&gt;d0&lt;/td&gt;
-      &lt;td&gt;y0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;单个字符&lt;/td&gt;
-      &lt;td&gt;r&lt;/td&gt;
-      &lt;td&gt;x或X&lt;/td&gt;
-      &lt;td&gt;yl或yh&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;五个字符&lt;/td&gt;
-      &lt;td&gt;5s&lt;/td&gt;
-      &lt;td&gt;5x&lt;/td&gt;
-      &lt;td&gt;5yl&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;表2-2-光标移动命令&quot;&gt;表2-2: 光标移动命令&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;移动&lt;/th&gt;
-      &lt;th&gt;命令&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;上下左右&lt;/td&gt;
-      &lt;td&gt;h,j,k,l&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;到下一行的第一个字符&lt;/td&gt;
-      &lt;td&gt;+&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;到上一行的第一个字符&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;到单词的结尾&lt;/td&gt;
-      &lt;td&gt;e或E&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往前一个单词&lt;/td&gt;
-      &lt;td&gt;w或W&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往后一个单词&lt;/td&gt;
-      &lt;td&gt;b或B&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;到一行的结尾&lt;/td&gt;
-      &lt;td&gt;$&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;到一行的开头&lt;/td&gt;
-      &lt;td&gt;0&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;表2-3-其他操作&quot;&gt;表2-3: 其他操作&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;操作&lt;/th&gt;
-      &lt;th&gt;命令&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往缓冲区中放置文本&lt;/td&gt;
-      &lt;td&gt;P或p&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;打开vi,如果指定了文件泽打开文件&lt;/td&gt;
-      &lt;td&gt;vi file&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;保存编辑结果,并离开文件&lt;/td&gt;
-      &lt;td&gt;ZZ&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;不保存编辑结果,并离开文件&lt;/td&gt;
-      &lt;td&gt;:q!&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;表2-4-文本创建与操纵命令&quot;&gt;表2-4: 文本创建与操纵命令&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;编辑动作&lt;/th&gt;
-      &lt;th&gt;命令&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;在光标所在位置插入文本&lt;/td&gt;
-      &lt;td&gt;i&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;在一行的开头插入文本&lt;/td&gt;
-      &lt;td&gt;I&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;在光标所在的位置附加文本&lt;/td&gt;
-      &lt;td&gt;a&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;在一行的最后附加文本&lt;/td&gt;
-      &lt;td&gt;A&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;在光标下一行打开新行&lt;/td&gt;
-      &lt;td&gt;o&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;开光标上一行打开新行&lt;/td&gt;
-      &lt;td&gt;O&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;删除一行并替换文本&lt;/td&gt;
-      &lt;td&gt;S&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;用新文本覆盖现有的文本&lt;/td&gt;
-      &lt;td&gt;R&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;合并当前这一行与下一行&lt;/td&gt;
-      &lt;td&gt;J&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;切换当前字符的大小写&lt;/td&gt;
-      &lt;td&gt;~&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;重复上一个动作&lt;/td&gt;
-      &lt;td&gt;.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;撤销上一个动作&lt;/td&gt;
-      &lt;td&gt;u&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;将一整行恢复到原来的状态&lt;/td&gt;
-      &lt;td&gt;U&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;表3-1--移动命令&quot;&gt;表3-1 : 移动命令&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;移动&lt;/th&gt;
-      &lt;th&gt;命令&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往前滚动一整屏&lt;/td&gt;
-      &lt;td&gt;^F&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往后滚动一整屏&lt;/td&gt;
-      &lt;td&gt;^B&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往前移动半屏&lt;/td&gt;
-      &lt;td&gt;^D&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往后移动半屏&lt;/td&gt;
-      &lt;td&gt;^U&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往前滚动一行&lt;/td&gt;
-      &lt;td&gt;^E&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往后滚动一行&lt;/td&gt;
-      &lt;td&gt;^Y&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;将当前行移到屏幕顶端并滚动屏幕&lt;/td&gt;
-      &lt;td&gt;z ENTER&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;将当前行移到屏幕中心并滚动屏幕&lt;/td&gt;
-      &lt;td&gt;z.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;将当前行移到屏幕底端并滚动屏幕&lt;/td&gt;
-      &lt;td&gt;z-&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;重画屏幕&lt;/td&gt;
-      &lt;td&gt;^L&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到home位置(屏幕的顶端)&lt;/td&gt;
-      &lt;td&gt;H&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到屏幕中间那一行&lt;/td&gt;
-      &lt;td&gt;M&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到屏幕的底端&lt;/td&gt;
-      &lt;td&gt;L&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到下一行的第一个字符&lt;/td&gt;
-      &lt;td&gt;ENTER&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到下一行的第一个字符&lt;/td&gt;
-      &lt;td&gt;+&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到上一行的第一个字符&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到当前行的第一个非空格字符&lt;/td&gt;
-      &lt;td&gt;^&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到当前行的第n哥字符&lt;/td&gt;
-      &lt;td&gt;n|&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到单词的结尾&lt;/td&gt;
-      &lt;td&gt;e&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到单词的结尾(忽略标点符号)&lt;/td&gt;
-      &lt;td&gt;E&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到当前句子的开头&lt;/td&gt;
-      &lt;td&gt;(&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到下一个句子的开头&lt;/td&gt;
-      &lt;td&gt;)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到当前这一段的开头&lt;/td&gt;
-      &lt;td&gt;{&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到下一段的开头&lt;/td&gt;
-      &lt;td&gt;}&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到当前这一节的开头&lt;/td&gt;
-      &lt;td&gt;[[&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;移到下一节的开头&lt;/td&gt;
-      &lt;td&gt;]]&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往前搜索模式&lt;/td&gt;
-      &lt;td&gt;/pattern&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往后搜索模式&lt;/td&gt;
-      &lt;td&gt;?pattern&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往同一个方向重复搜索&lt;/td&gt;
-      &lt;td&gt;n&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往相反方向重复搜索&lt;/td&gt;
-      &lt;td&gt;N&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往前重复搜索&lt;/td&gt;
-      &lt;td&gt;/&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;往后重复搜索&lt;/td&gt;
-      &lt;td&gt;?&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;搜索当前行中下一个出现x的地方&lt;/td&gt;
-      &lt;td&gt;fx&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;搜索当前行中上一个出现x的地方&lt;/td&gt;
-      &lt;td&gt;Fx&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;搜索当前行中下一个出现x的地方的前一个字符&lt;/td&gt;
-      &lt;td&gt;tx&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;搜索当前行中上一个出现x的地方的后一个字符&lt;/td&gt;
-      &lt;td&gt;Tx&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;重复上一个搜索命令,方向相同&lt;/td&gt;
-      &lt;td&gt;;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;重复上一个搜索命令,方向相反&lt;/td&gt;
-      &lt;td&gt;,&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;转至第n行&lt;/td&gt;
-      &lt;td&gt;nG&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;转至文件结尾&lt;/td&gt;
-      &lt;td&gt;G&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;回到上一个记号或上下文&lt;/td&gt;
-      &lt;td&gt;``&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;回到包含上一个记号的行的开头出&lt;/td&gt;
-      &lt;td&gt;’’&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;显示当前的行号(不是移动命令)&lt;/td&gt;
-      &lt;td&gt;^G&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;表4-1-更多的编辑命令&quot;&gt;表4-1: 更多的编辑命令&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;更改&lt;/th&gt;
-      &lt;th&gt;删除&lt;/th&gt;
-      &lt;th&gt;复制&lt;/th&gt;
-      &lt;th&gt;从光标位置到…&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cH&lt;/td&gt;
-      &lt;td&gt;dH&lt;/td&gt;
-      &lt;td&gt;yH&lt;/td&gt;
-      &lt;td&gt;屏幕顶端&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cL&lt;/td&gt;
-      &lt;td&gt;dL&lt;/td&gt;
-      &lt;td&gt;yL&lt;/td&gt;
-      &lt;td&gt;屏幕底端&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;c+&lt;/td&gt;
-      &lt;td&gt;d+&lt;/td&gt;
-      &lt;td&gt;y+&lt;/td&gt;
-      &lt;td&gt;下一行&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;c5|&lt;/td&gt;
-      &lt;td&gt;d5|&lt;/td&gt;
-      &lt;td&gt;y5|&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2c)&lt;/td&gt;
-      &lt;td&gt;2d)&lt;/td&gt;
-      &lt;td&gt;2y)&lt;/td&gt;
-      &lt;td&gt;往下第二个句子&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;c{&lt;/td&gt;
-      &lt;td&gt;d{&lt;/td&gt;
-      &lt;td&gt;y{&lt;/td&gt;
-      &lt;td&gt;上一段&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;c/pattern&lt;/td&gt;
-      &lt;td&gt;d/pattern&lt;/td&gt;
-      &lt;td&gt;y/pattern&lt;/td&gt;
-      &lt;td&gt;pattern(模式)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cn&lt;/td&gt;
-      &lt;td&gt;dn&lt;/td&gt;
-      &lt;td&gt;yn&lt;/td&gt;
-      &lt;td&gt;下一个模式&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;cG&lt;/td&gt;
-      &lt;td&gt;dG&lt;/td&gt;
-      &lt;td&gt;yG&lt;/td&gt;
-      &lt;td&gt;文件结尾&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;c13G&lt;/td&gt;
-      &lt;td&gt;d13G&lt;/td&gt;
-      &lt;td&gt;y13G&lt;/td&gt;
-      &lt;td&gt;第13行&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;表4-2-命令行选项&quot;&gt;表4-2: 命令行选项&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;选项&lt;/th&gt;
-      &lt;th&gt;意义&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;+n file&lt;/td&gt;
-      &lt;td&gt;在第n行打开file&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;+ file&lt;/td&gt;
-      &lt;td&gt;在最后一行打开file&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;+/pattern file&lt;/td&gt;
-      &lt;td&gt;在第一个出现pattern的地方打开file&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-c command file&lt;/td&gt;
-      &lt;td&gt;在打开文件后执行命令;通常是行号或搜索模式&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-R&lt;/td&gt;
-      &lt;td&gt;用只读模式打开(与view命令相同)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-r&lt;/td&gt;
-      &lt;td&gt;在死机后恢复文件&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;表4-3缓冲区名称&quot;&gt;表4-3:缓冲区名称&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;缓冲区名称&lt;/th&gt;
-      &lt;th&gt;缓冲区用途&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1~9&lt;/td&gt;
-      &lt;td&gt;最后9次删除操作的内容,从最后一次到最先一次&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;a~z&lt;/td&gt;
-      &lt;td&gt;你可以使用的命名缓冲区,大写字母表示附加到缓冲区现有内容后&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;表4-4-缓冲区与标记命令&quot;&gt;表4-4: 缓冲区与标记命令&lt;/h1&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;命令&lt;/td&gt;
-      &lt;td&gt;意义&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;“b command&lt;/td&gt;
-      &lt;td&gt;用缓冲区b执行命令&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;mx&lt;/td&gt;
-      &lt;td&gt;将当前位置标记为x&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;‘x&lt;/td&gt;
-      &lt;td&gt;将光标移到标记x所在行的第一个字符&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;’’&lt;/td&gt;
-      &lt;td&gt;回到上一个标记或上下文所在行的开头&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;`x&lt;/td&gt;
-      &lt;td&gt;将光标移到用x标记的字符&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-        <pubDate>Tue, 11 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/vim/2017/04/11/VIM.html</link>
-        <guid isPermaLink="true">http://localhost:4000/vim/2017/04/11/VIM.html</guid>
+        <link>http://localhost:4000/vim/2017/07/25/vim_fmt.html</link>
+        <guid isPermaLink="true">http://localhost:4000/vim/2017/07/25/vim_fmt.html</guid>
         
         
         <category>vim</category>
