@@ -6,9 +6,46 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Oct 2017 10:14:24 +0800</pubDate>
-    <lastBuildDate>Wed, 25 Oct 2017 10:14:24 +0800</lastBuildDate>
+    <pubDate>Wed, 25 Oct 2017 16:50:42 +0800</pubDate>
+    <lastBuildDate>Wed, 25 Oct 2017 16:50:42 +0800</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>命令systemctl</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使某服务自动启动 systemctl enable httpd.service&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使某服务不自动启动 systemctl disable httpd.service&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;检查服务状态 systemctl status httpd.service&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;显示所有已启动的服务 systemctl list-units –type=service&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;启动某服务 systemctl start httpd.service&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;停止某服务 systemctl stop httpd.service&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;重启某服务 systemctl restart httpd.service&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/kenhins/article/details/74518978&quot;&gt;参考链接&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Oct 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/linux/2017/10/25/%E5%91%BD%E4%BB%A4systemctl.html</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/2017/10/25/%E5%91%BD%E4%BB%A4systemctl.html</guid>
+        
+        
+        <category>linux</category>
+        
+      </item>
     
       <item>
         <title>vim reload</title>
@@ -142,25 +179,6 @@
         
         
         <category>axure</category>
-        
-      </item>
-    
-      <item>
-        <title>vim format </title>
-        <description>&lt;h1 id=&quot;格式化代码以下是按键&quot;&gt;格式化代码：以下是按键&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gg
-shift + v
-shifg + g
-=
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 25 Jul 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/vim/2017/07/25/vim_fmt.html</link>
-        <guid isPermaLink="true">http://localhost:4000/vim/2017/07/25/vim_fmt.html</guid>
-        
-        
-        <category>vim</category>
         
       </item>
     
